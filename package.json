@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7"
+  },
+  "name": "nodejs-mongodb-mongoose",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InahChoi/nodejs-mongoDB-mongoose.git"
+  },
+  "author": "inah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InahChoi/nodejs-mongoDB-mongoose/issues"
+  },
+  "homepage": "https://github.com/InahChoi/nodejs-mongoDB-mongoose#readme",
+  "description": ""
+}
