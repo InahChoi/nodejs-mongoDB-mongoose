@@ -21,4 +21,25 @@ node.js로 애플리케이션을 개발할 때 확장 모듈에 대한 의존성
 `npm install --save express` <br/>
 
 <b>express란?</b><br/>
-node.js의 웹 애플리케이션 프레임워크로, http API 작성에
+node.js를 사용하여 서버를 개발하고자 하는 개발자들을 위하여<br/>
+서버를 쉽게 구성할 수 있게 만든 프레임워크입니다.<br/>
+
+### 3. 서버 띄워보기 <br/>
+서버 파일명은 `app.js`, `server.js`, `index.js` 등으로 많이 사용됩니다.
+현재 진행 중인 프로젝트의 서버파일은 index.js이므로 index.js로 하겠습니다.
+```
+// index.js
+// express import
+const express = require('express');
+
+// app express 명시
+const app = express();
+
+// localhost:8080/ 으로 접근 시 Hello World! 출력
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+})
+
+app.listen(8080, () => console.log('8080 포트에서 대기중'));
+```
+
