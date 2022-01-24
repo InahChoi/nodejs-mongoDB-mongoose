@@ -1,4 +1,5 @@
 // Board model Schema
+// Mongoose를 사용한 model의 스키마를 지정하는 파일입니다.
 
 // Module Import
 const mongoose = require('mongoose');
