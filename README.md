@@ -17,7 +17,7 @@ https://nodejs.org/en/download/
 
 <br/>
 
-### 2️⃣ 프로젝트 폴더 내 vscode 혹은 터미널에서, npm init
+### 2️⃣ 프로젝트 폴더 내 vscode 터미널 혹은 터미널에서, npm init
 `npm init -y` <br/><br/>
 npm init시 package.json 파일이 생성됩니다. <br/>
 <b>*package.json란?</b><br/>
