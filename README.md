@@ -75,9 +75,11 @@ app.listen(8080, () => console.log('8080 포트에서 대기중'));
 }
 
 // after
+// "dev" => 서버를 시작할 때 사용할 명령어
+// "npm run dev 명령어 사용 시 src/index.js를 실행한다"와 같습니다.
 {
     "scripts": {
-      "dev": "nodemon index.js"
+      "dev": "nodemon srxc/index.js"
     },
 }
 ```
@@ -95,7 +97,8 @@ app.listen(8080, () => console.log('8080 포트에서 대기중'));
 <b>*mongoose를 사용하는 이유</b><br/>
 mongoose를 사용하는 이유는 크게 두가지입니다.<br/>
 - 자유도가 높아 어떤 컬럼에 어떤 데이터를 넣어도 mongoDB에 저장이 됩니다.<br/>
-이러한 경우 프로덕션에서는 위험할 수 있겠죠? mongoose는 mongoDB의 document에 값을 저장할 때 <br/>
+이러한 경우 프로덕션에서는 위험할 수 있겠죠? <br/>
+mongoose는 mongoDB의 document에 값을 저장할 때 <br/>
 컬럼의 값과 타입, 필드를 검사해줍니다.
 - mongoDB 쿼리와 더불어 mongoose가 제공하는 쿼리빌더 또한 같이 사용할 수 있어 편리합니다. <br/><br/>
 
