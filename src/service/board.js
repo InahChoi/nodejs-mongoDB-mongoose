@@ -18,4 +18,6 @@ const postInsert = (req, res, next) => {
 
 // Delete
 
-module.exports = { postInsert }
+module.exports = {
+  postInsert
+}

@@ -2,6 +2,9 @@
 // 여러 미들웨어를 관리하는 파일입니다.
 // node.js의 서버 entry point로, 서버 시작의 시작점입니다.
 
+// import dotenv
+require("dotenv").config();
+
 // express import
 const express = require('express');
 
@@ -23,4 +26,4 @@ app.get('/', (req, res) => {
 // "localhost:8080/board로 접근 시 routes/board로 가겠다" 라는 뜻입니다.
 app.use('/board', require('./routes/board'));
 
-app.listen(8080, () => console.log('🚀 Server Listening On Port:8080'));
+app.listen(process.env.PORT, () => console.log('🚀 Server Listening On Port: ', `${process.env.PORT}`));
