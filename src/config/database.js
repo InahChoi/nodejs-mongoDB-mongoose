@@ -9,10 +9,12 @@
 // api test로도 익숙해질 수 있으니 postman을 꼭 깔아주세요.
 // https://www.postman.com/
 
+// dotenv import
+require("dotenv").config();
 // mongoose import
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://inah:1004@cluster0.owwnq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('🙈Connected to mongo database!🙉'))
   .catch((e) => console.error(e, '📟Error connection to database📟'));
 
